@@ -7,37 +7,33 @@
 
 <body>
 <form id="form1" name="form1" method="post" action="">
-  <table width="565" height="228" border="1" align="center">
+  <table width="565" height="228" border="0" align="center">
     <tr bgcolor="#CCCCCC">
-      <td height="23" colspan="3">Datos Personales</td>
+      <td height="23" colspan="2">Datos Personales</td>
     </tr>
     <tr>
       <td width="88">Nombre</td>
-      <td width="191"><label>
+      <td><label>
         <input type="text" name="nombre" id="nombre" />
       </label></td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Login</td>
       <td><label>
         <input type="text" name="login" id="login" />
       </label></td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Contraseña</td>
       <td><label>
         <input type="password" name="contrasena" id="contrasena" />
       </label></td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Genero</td>
       <td>
         Masculino<input type="radio" name="radio" id="genero" value="M" />
         Femenino<input type="radio" name="radio" id="genero" value="F" />      </td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Gustos</td>
@@ -45,14 +41,12 @@
         Leer&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="gusto1" id="gusto1" /><br />
         Viajar&nbsp;&nbsp;<input type="checkbox" name="gusto2" id="gusto2" /><br />
         Estudar<input type="checkbox" name="gusto3" id="gusto3" />      </td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Opinion</td>
       <td><label>
-        <textarea name="opinion" id="opinion" cols="45" rows="5"></textarea>
+        <textarea name="opinion" id="opinion" cols="30" rows="5"></textarea>
       </label></td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
       <td>Ciudad</td>
@@ -62,14 +56,13 @@
         <option value="bogota">Bogota</option>
         <option value="medellin">Medellin</option>
       </select></td>
-      <td>&nbsp;</td>
     </tr>
-    <tr>
-      <td colspan="3"><label>
+    <tr bgcolor="#CCCCCC">
+      <td colspan="2">
         <div align="center">
           <input type="submit" name="enviar" id="enviar" value="Enviar" />
           </div>
-      </label></td>
+      </td>
     </tr>
   </table>
 </form>
