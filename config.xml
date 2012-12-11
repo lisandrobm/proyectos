@@ -5,6 +5,9 @@
         versionCode="10" 
         version   = "1.0.0">
 
+<feature name="http://api.phonegap.com/1.0/camera"/>
+<feature name="http://api.phonegap.com/1.0/file"/>
+
     <!-- versionCode is optional and Android only -->
 
     <name>Aplicacion_1</name>

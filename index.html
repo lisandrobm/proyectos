@@ -2,11 +2,45 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sin t&iacute;tulo</title>
-</head>
+<title>Inicio</title>
+<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+<script src="phonegap.js"></script>
+<script language="javascript" type="text/javascript">
+function tomarFoto() {      
+    navigator.camera.getPicture(mostrarFoto, errorFoto, { quality: 50,    
+ 	destinationType: navigator.camera.destinationType.DATA_URL,      
+	 sourceType: navigator.camera.sourceType.CAMERA });
+	 }
 
+function mostrarFoto(imageData) {          
+var elementoImagen = document.getElementById('mi_imagen');          
+elementoImagen.style.display = 'block';        
+elementoImagen.src = "data:image/jpeg;base64," + imageData;  
+ }
+function errorFoto(mensaje)
+    {
+	alert('Se presentó el siguiente error: '+mensaje);
+    }
+</script>
+</head>
 <body>
-<h1>HOLA MUNDO</h1>
-<a href="datos_personales.html">Ingresar datos personales</a>
+<div id="contenedor">
+<div id="header"><img src="imagenes/header.jpg" width="1024" height="120" /></div>
+<div id="contenido">
+<div id="menu_iz">PAGINAS DE INTERES<br />
+<ul>
+<li><a href="http://www.google.com.co" target="_blank">Google</a></li>
+<li><a href="http://www.yahoo.com" target="_blank">Yahoo</a></li>
+<li><a href="http://www.lapatria.com" target="_blank">La Patria</a></li>
+</ul>
+</div>
+<h1>INICIO</h1>
+<p><a href="datos_personales.html">Clic Para Ingresar datos personales</a><br />
+    <br />
+  <a href="javascript:tomarFoto()">Clic Para Tomar una Foto</a></p>
+<p><img src="" id="mi_imagen" width="250" height="200" /></p>
+</div>
+<div id="footer">Este es el Pie de Pagina</div>
+</div>
 </body>
 </html>
