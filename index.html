@@ -13,7 +13,7 @@ function onLoad()
 function tomarFoto() { 
      alert ("Si entra");     
     navigator.camera.getPicture(mostrarFoto, errorFoto, { quality: 50,    
- 	destinationType: navigator.camera.destinationType.DATA_URL,      
+ 	destinationType: navigator.camera.destinationType.FILE_URI,      
 	 sourceType: navigator.camera.sourceType.CAMERA });
 	 }
 
@@ -28,7 +28,7 @@ function errorFoto(mensaje)
     }
 </script>
 </head>
-<body onload="onLoad()">
+<body onload ="onLoad()">
 <div id="contenedor">
 <div id="header"><img src="imagenes/header.jpg" width="1024" height="120" /></div>
 <div id="contenido">
