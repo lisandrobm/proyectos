@@ -6,6 +6,10 @@
 <link href="css/estilos.css" rel="stylesheet" type="text/css" />
 <script src="phonegap.js"></script>
 <script language="javascript" type="text/javascript">
+function onLoad()
+{
+ document.addEventListener("deviceready", onDeviceReady, false);
+}
 function tomarFoto() { 
      alert ("Si entra");     
     navigator.camera.getPicture(mostrarFoto, errorFoto, { quality: 50,    
@@ -24,7 +28,7 @@ function errorFoto(mensaje)
     }
 </script>
 </head>
-<body>
+<body onload="onLoad()">
 <div id="contenedor">
 <div id="header"><img src="imagenes/header.jpg" width="1024" height="120" /></div>
 <div id="contenido">
