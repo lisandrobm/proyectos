@@ -6,7 +6,8 @@
 <link href="css/estilos.css" rel="stylesheet" type="text/css" />
 <script src="phonegap.js"></script>
 <script language="javascript" type="text/javascript">
-function tomarFoto() {      
+function tomarFoto() { 
+     alert ("Si entra");     
     navigator.camera.getPicture(mostrarFoto, errorFoto, { quality: 50,    
  	destinationType: navigator.camera.destinationType.DATA_URL,      
 	 sourceType: navigator.camera.sourceType.CAMERA });

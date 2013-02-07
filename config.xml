@@ -5,8 +5,6 @@
         versionCode="10" 
         version   = "1.0.0">
 
-<feature name="http://api.phonegap.com/1.0/camera"/>
-<feature name="http://api.phonegap.com/1.0/file"/>
 
     <!-- versionCode is optional and Android only -->
 
@@ -19,5 +17,7 @@
     <author href="http://www.reactiva.com.co" email="gerencia@reactiva.com.co">
         Lisandro Betancur M. 
     </author>
+<feature name="http://api.phonegap.com/1.0/camera"/>
+<feature name="http://api.phonegap.com/1.0/file"/>
 
 </widget>
