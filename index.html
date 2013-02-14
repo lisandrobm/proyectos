@@ -14,10 +14,8 @@ function onDeviceReady()
 {}
 function tomarFoto() { 
      alert ("Si entra");     
-    navigator.camera.getPicture(mostrarFoto, errorFoto, { quality: 50, destinationType: Camera.DestinationType.DATA_URL, sourceType:     Camera.PictureSourceType.CAMERA });
+  navigator.camera.getPicture(mostrarFoto, errorFoto, { quality: 50, destinationType: Camera.DestinationType.DATA_URL, sourceType: Camera.PictureSourceType.CAMERA });
 }
-
-	 }
 
 function mostrarFoto(imageData) {          
 var elementoImagen = document.getElementById('mi_imagen');          
@@ -44,8 +42,6 @@ function errorFoto(mensaje)
 <h1>INICIO</h1>
 <p><a href="datos_personales.html">Clic Para Ingresar datos personales</a><br />
     <br />
-  <a href="#" onclick="tomarFoto()">Clic Para Tomar una Foto</a></p>
-  
   <form id="form1" name="form1" method="post" action="">
   <input type="button" value="Tomar Foto" onclick="tomarFoto()" class="visible" />
   </form>
