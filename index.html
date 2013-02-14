@@ -14,7 +14,7 @@ function onDeviceReady()
 {}
 function tomarFoto() { 
      alert ("Si entra");     
-    navigator.camera.getPicture(mostrarFoto, errorFoto, { quality: 50, destinationType: navigator.camera.DestinationType.FILE_URI, sourceType: navigator.camera.DestinationType.CAMERA });
+    navigator.camera.getPicture(mostrarFoto, errorFoto, { quality: 50, destinationType: navigator.camera.DestinationType.FILE_URI/*, sourceType: navigator.camera.DestinationType.CAMERA*/ });
 }
 
 	 }
@@ -44,7 +44,7 @@ function errorFoto(mensaje)
 <h1>INICIO</h1>
 <p><a href="datos_personales.html">Clic Para Ingresar datos personales</a><br />
     <br />
-  <a href="javascript:tomarFoto()">Clic Para Tomar una Foto</a></p>
+  <a href="#" onclick="tomarFoto()">Clic Para Tomar una Foto</a></p>
 <p><img src="" id="mi_imagen" width="250" height="200" /></p>
 </div>
 <div id="footer">Este es el Pie de Pagina</div>
