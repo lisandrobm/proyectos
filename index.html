@@ -10,6 +10,8 @@ function onLoad()
 {
  document.addEventListener("deviceready", onDeviceReady, false);
 }
+function onDeviceReady()
+{}
 function tomarFoto() { 
      alert ("Si entra");     
     navigator.camera.getPicture(mostrarFoto, errorFoto, { quality: 50,    
